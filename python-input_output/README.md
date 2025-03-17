@@ -1,1 +1,1 @@
-Please read me before proceeding
+Please read me before prgressing
