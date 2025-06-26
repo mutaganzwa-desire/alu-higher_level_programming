@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 // readFile.js
 
 const fs = require('fs');
