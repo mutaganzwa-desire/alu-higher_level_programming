@@ -1,15 +1,13 @@
 #!/usr/bin/node
 
-const fs = require('fs');
+const request = require('request');
 
-const filePath = process.argv[2];
+const url = process.argv[2];
 
-const data = process.argv[3];
-
-fs.writeFile(filePath, data, (err) => {
+request.get(url, function (err, res) {
   if (err) {
     console.log(err);
   } else {
-    fs.readFileSync(filePath, 'utf8');
+    console.log('code: ' + res.statusCode);
   }
 });
